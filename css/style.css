@@ -1,0 +1,226 @@
+:root {
+  --header-color: #1e1e1e;
+  --text-color: #4e4e4e;
+}
+body {
+  background: #f5f5f5;
+}
+nav.bg-black {
+  background-color: rgba(0, 0, 0, 0.9) !important ;
+}
+.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.625), rgba(0, 0, 0, 0.425)),
+    url(../imgs/hero-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.dropdown-toggle::after {
+  content: "\f078";
+  font-family: "Font Awesome 6 Pro";
+  border: none;
+  position: absolute;
+  font-size: 10px;
+  top: 50%;
+  transform: translate(20%, -50%);
+}
+
+.dropdown-menu  a {
+  transition: .3s ease-in-out;
+}
+.dropdown-menu li:hover a {
+  color: #0078ff;
+}
+.typed-cursor {
+  font-size: 2.5rem !important;
+}
+
+.about .container {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.1) 0px 8px 16px -8px;
+}
+
+h2.about-me {
+  position: relative;
+  width: fit-content;
+}
+h2.about-me::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 60%;
+  height: 5px;
+  background-color: #0078ff;
+}
+
+/* * Main Header * */
+.main-header {
+  position: relative;
+}
+.main-header::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 50;
+  transform: translateX(-50%);
+  width: 3%;
+  height: 5px;
+  background-color: #0078ff;
+}
+
+.services .icon i {
+  border: 10px solid #0078ff;
+  color: var(--header-color);
+}
+
+.services .container .row > div > div.inner {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.1) 0px 8px 16px -8px;
+}
+.services .container .row > div > div.inner i {
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.services .container .row > div > div.inner:hover i {
+  background-color: #0078ff;
+  border-color: #cde1f8;
+  color: white;
+}
+
+.counter-section {
+  background: linear-gradient(rgb(0, 120, 255, 0.7), rgb(0, 120, 255, 0.7)),
+    url(../imgs/counters-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.counter-section .icon i {
+  border: 10px solid #cde1f8;
+  border-radius: 50%;
+}
+/*  */
+.hvr-underline-from-left:before {
+  height: 1px;
+  background-color: white;
+}
+.dropdown:hover a::before {
+  width: 100%;
+}
+.dropdown:hover ul {
+  display: block;
+}
+
+.portfolio-box img {
+  transition: all 0.7s ease-in-out;
+}
+.portfolio-box:hover img {
+  transform: scale(1.3);
+}
+
+.carousel {
+  background-image: linear-gradient(
+      rgb(0, 120, 255, 0.7),
+      rgb(0, 120, 255, 0.7)
+    ),
+    url(../imgs/overlay-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.blog-box .inner a {
+  transition: 0.3s ease-in-out;
+  color: var(--header-color);
+}
+.blog-box .inner span {
+  color: var(--text-color);
+}
+.blog-box .inner a:hover {
+  color: #0078ff;
+}
+
+.contact {
+  background-image: linear-gradient(
+      rgb(0, 120, 255, 0.7),
+      rgb(0, 120, 255, 0.7)
+    ),
+    url(../imgs/overlay-bg.jpg);
+  padding-block-start: 100px;
+  padding-block-end: 50px;
+}
+.contact h2 {
+  color: var(--header-color);
+  position: relative;
+  padding-block: 20px;
+}
+.contact h2::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 20%;
+  background: #0078ff;
+  height: 3px;
+}
+.contact p {
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.contact .btn {
+  background-color: #0078ff;
+  border: #0078ff 3px solid;
+  transition: 0.3s ease-in-out;
+  font-size: 19px;
+}
+.contact .btn:hover {
+  background: #3393ff;
+  border: #d0e3f8 3px solid;
+}
+
+.contact li {
+  color: var(--text-color);
+}
+.contact li:first-child {
+  margin-left: -0.0938rem;
+}
+.contact li i {
+  position: absolute;
+  right: 101%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #0078ff;
+}
+.contact .icons {
+  display: flex;
+}
+.contact .icons i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #0078ff;
+  margin-right: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-size: 18px;
+}
+.contact .icons i:hover {
+  background: #3393ff;
+  border: #d0e3f8 4px solid;
+  color: white;
+}
+
+footer {
+  background: #0062d3;
+}
